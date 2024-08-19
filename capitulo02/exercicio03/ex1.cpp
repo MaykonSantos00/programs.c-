@@ -14,9 +14,33 @@ public:
     {
         this->courseName = courseName;
     }
+    string getCourseName()
+    {
+        return this->courseName;
+    }
+    void displayMessage()
+    {
+        cout << " Welcome to the grade book for\n " << getCourseName() << "!" << endl;
+    }
 
 
 private:
-    string courseNames;
+    string courseName;
 
 };
+
+int main()
+{
+    GradeBook myGradeBook;
+    string courseName;
+
+    cout << "Initial course name is: " << myGradeBook.getCourseName() << endl;
+
+    cout << "Please, Enter your course Name \n";
+    getline(cin, courseName);
+    myGradeBook.setCourseName("courseName");
+    
+    myGradeBook.displayMessage();
+
+    return 0;
+}
