@@ -38,7 +38,7 @@ int main()
 
     cout << "Please, Enter your course Name \n";
     getline(cin, courseName);
-    myGradeBook.setCourseName("courseName");
+    myGradeBook.setCourseName(courseName);
     
     myGradeBook.displayMessage();
 
