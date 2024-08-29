@@ -2,14 +2,16 @@
 #include <string>
 using namespace std;
 
-class ex1
+class Ex1
 {
 private:
-    double km;
-    double lg;
+    double quilometros;
+    double litrosGasolina;
+    int qtdDeTanques;
+    int totalGasolina;
 
 public:
-    
+    void calcularTanque();
 
 };
 
