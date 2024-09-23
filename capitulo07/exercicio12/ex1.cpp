@@ -7,7 +7,7 @@ void copy2(char *, const char *);
 int main(){
 
     char string1[10];
-    char *string2[] = "Hello";
+    char string2[] = "Hello";
     char string3[10];
     char string4[] = "Good Bye";
 
@@ -20,7 +20,7 @@ int main(){
     return 0;
 }
 
-void copy1(char * s1, const char * s2)
+void copy1(char * s1, const char *s2)
 {
     for (int i = 0; (s1[i] = s2[1]) != '\0'; i++);
 }
